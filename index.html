@@ -9,23 +9,29 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<style>
-		.bg1{
-			background: rgb(253, 237, 215);
+		.image{
+			/*width: 800px;
+			height: 300px;
+			background: #c3c3c3;*/
 		}
-		.center{
-			padding: 30px;
+		.footer{
+			background: #c7c7c7;
+			padding-top: 15px;
+			height: 50px;
+			margin-top: 100px;
+		}
+		.footer p{
 			text-align: center;
 		}
-.blog-footer {
-  padding: 40px 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: 1px solid #e5e5e5;
-}
-.blog-footer p:last-child {
-  margin-bottom: 0;
-}
+		.content{
+			margin-top: 50px;
+		}
+		.img-responsive.pull-left{
+			margin-right: 10px;
+		}
+		p{
+			text-align: justify;
+		}
 	</style>
 	<script>
 	function bigImg(x) {
@@ -43,45 +49,91 @@
 </script>
 </head>
 <body>
-	<div class="container">
+	<!-- begin container  -->
+	<div class="container content">
 		<div class="row">
-			<div class="col-md-2">
-				<p>Левая колонка</p>
-			</div>
-			<div class="col-md-8">
-			<!-- begin container  -->
-			<div class="row bg1">
-				<div class="col-md-3 center">
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, nam.</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dicta molestiae fugit laborum sunt ipsam voluptatum quo qui facilis quaerat ut unde praesentium architecto, deserunt necessitatibus totam a iusto dolorem amet magni maiores. Error sint ipsum rerum aspernatur? Optio est, dolorum quos quae ratione voluptate. Cumque libero exercitationem, illo ducimus!</p>
-				</div>
-				<div class="col-md-3 center">
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, sunt.</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In voluptatibus sed, cum animi consequuntur, omnis, sunt delectus excepturi suscipit quas officiis iste a, esse incidunt corrupti deleniti? Facilis pariatur, amet unde praesentium aliquid nihil cupiditate officia blanditiis eum dignissimos repellat ad minus perspiciatis voluptates hic delectus maiores assumenda enim quas.</p>
-				</div>
-				<div class="col-md-3 center">
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ex!</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus laboriosam ea dolores autem perferendis rem dolorum commodi, animi facere quisquam aperiam velit voluptate quis quos sint, cupiditate minus. A, laborum. Repellat ipsum possimus ex. Quaerat, modi voluptatibus sequi, doloremque deserunt nihil laboriosam! Tenetur nostrum ducimus consequuntur expedita aut quos voluptates.</p>
-				</div>
-				<div class="col-md-3 center">
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, magni!</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio exercitationem harum blanditiis voluptatem molestias. Laborum odio commodi, totam ad ratione molestiae, mollitia rem neque ipsa recusandae dolore tempora vero est assumenda nisi aperiam natus autem, possimus magni obcaecati perferendis nulla. Accusamus quasi dolore accusantium distinctio a, nam velit. Labore, odit?</p>
-				</div>
-			</div>
-			<!-- end container -->
-			</div>
-			<div class="col-md-2">
-				<p>Правая колонка</p>
-				<i onmouseover="bigImg(this)" onmouseout="normalImg(this)" width="32" height="32" class="fa fa-calendar"></i>
-			</div>
-		</div>
+	<div class="col-md-3">
+		<div class="row"><!-- begin navbar  -->
+			<nav>
+			<h4 class="navbar-text">Категории</h4>
+				<ul class="nav navbar-nav">
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+				</ul>
+			
+				<h4 class="navbar-text">Последние статьи</h4>
+				<ul class="nav navbar-nav">
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+				</ul>
+			
+				<h4 class="navbar-text">Контакты</h4>
+				<ul class="nav navbar-nav">
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+					<li><a href="#">Ссылки на меню</a></li>
+				</ul>
+			</nav>
+			<!-- end navbar --></div>
 	</div>
-	<footer class="blog-footer">
-      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-12 image">
+						<img class="img-responsive" src="http://lorempixel.com/900/300" alt="image">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, itaque.</a></h3>
+						<img class="img-responsive pull-left" src="http://lorempixel.com/80/80" alt="image">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae reprehenderit voluptatum amet illum expedita distinctio fugiat explicabo necessitatibus laudantium impedit aut, veritatis nulla excepturi, recusandae. Eaque mollitia, dolorum expedita dolores eius quam, dolorem cumque, ea amet alias odit placeat sapiente quis esse omnis odio ipsum. Odit sequi optio, quisquam.</p>
+					</div>
+					<div class="col-md-12">
+						<h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, necessitatibus.</a></h3>
+						<img class="img-responsive pull-left" src="http://lorempixel.com/80/80" alt="image">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, laboriosam ex non neque a expedita, voluptas consequuntur eligendi, sapiente beatae unde consequatur, facilis minima aut saepe. Sint minus aliquam cum laboriosam placeat aspernatur quia voluptas dolor nesciunt. Qui, neque dolorum, adipisci modi eaque laboriosam, corrupti consequatur ex commodi eligendi doloribus.</p>
+					</div>
+					<div class="col-md-12">
+						<h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, necessitatibus.</a></h3>
+						<img class="img-responsive pull-left" src="http://lorempixel.com/80/80" alt="image">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, laboriosam ex non neque a expedita, voluptas consequuntur eligendi, sapiente beatae unde consequatur, facilis minima aut saepe. Sint minus aliquam cum laboriosam placeat aspernatur quia voluptas dolor nesciunt. Qui, neque dolorum, adipisci modi eaque laboriosam, corrupti consequatur ex commodi eligendi doloribus.</p>
+					</div>
+					<div class="col-md-12">
+						<h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, necessitatibus.</a></h3>
+						<img class="img-responsive pull-left" src="http://lorempixel.com/80/80" alt="image">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, laboriosam ex non neque a expedita, voluptas consequuntur eligendi, sapiente beatae unde consequatur, facilis minima aut saepe. Sint minus aliquam cum laboriosam placeat aspernatur quia voluptas dolor nesciunt. Qui, neque dolorum, adipisci modi eaque laboriosam, corrupti consequatur ex commodi eligendi doloribus.</p>
+					</div>
+					<div class="col-md-12">
+						<h3><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, necessitatibus.</a></h3>
+						<img class="img-responsive pull-left" src="http://lorempixel.com/80/80" alt="image">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, laboriosam ex non neque a expedita, voluptas consequuntur eligendi, sapiente beatae unde consequatur, facilis minima aut saepe. Sint minus aliquam cum laboriosam placeat aspernatur quia voluptas dolor nesciunt. Qui, neque dolorum, adipisci modi eaque laboriosam, corrupti consequatur ex commodi eligendi doloribus.</p>
+					</div>
+				</div>
+			</div>
+	</div>
+	</div>
+	<!-- end container -->
+<div class="container-fluid">
+<div class="row">
+	<!-- begin footer  -->
+		<div class="col-md-12 footer">
+			<p>@Lorem ipsum dolor sit amet. http://osc.template-help.com/wordpress_11498//</p>
+		</div>
+		<!-- end footer --></div>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
