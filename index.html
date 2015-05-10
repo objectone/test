@@ -9,46 +9,151 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
 </head>
+<style>
+	.row{
+		/*height: 400px;*/
+		padding: 40px;
+	}
+	.pretop{
+		margin: 40px 0 40px 0;
+	}
+	.top{
+		background: #BAD2FF;
+	}
+	.midlle{
+		background: #7FB8F0;
+	}
+	.footer{
+		background: #E5EEFF;
+	}
+	.img-responsive{
+		margin-bottom: 10px;
+	}
+	.col-md-3{
+		text-align: center;
+	}
+	.toptext{
+		margin-top: 40px;
+		text-align: right;
+	}
+	.prefoot{
+		text-align: justify;
+		margin: 40px 0 40px 0;
+	}
+
+	.lead{
+		text-align: center;
+	}
+	form{
+		text-align: center;
+		margin-top: 50px;
+		background: #ACC9FD;
+		padding: 50px;
+	}
+</style>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-2">
-				<p>Левая колонка</p>
-			</div>
-			<div class="col-md-8">
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<h1 class="animated mov">Пример 1</h1>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<h1 class="animated mov">Пример 2</h1>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<h1 class="animated mov">Пример 3</h1>
-<br><br><br>
-<p>Текстовое дополнение при работе с гитом. И так удалось создать новую папку, инициализировать там гит. Подключиться к нашему репо через git remote add test url и git fetch test. </p><br>
-
-<p>Потом надо было закомитить файлы ещё раз проверить бранчи и пути. Потом ещё 2 команды. git checkout -b site2 (т.е. создали новый бранч)</p><br>
-
-<p>И git push test site2 (закинули в репо test наш бранч)</p><br>
-
-<p>Не забывай про команды проверки бранчей и алиасов. git branch -a; git remote -v</p><br>
-			</div>
-			<div class="col-md-2">
-				<p>Правая колонка</p>
+	<div class="container-fluid">
+<div class="row pretop">
+	<div class="col-md-12 wow bounceInDown">
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ea dolorem architecto quaerat facilis soluta, odio inventore ipsam corporis blanditiis!</p>
+	</div>
+</div>
+		<div class="row top">
+			<section class="wow bounceInLeft" data-wow-duration="2s">
+				<div class="col-md-6 toptext">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, placeat.</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam id eligendi asperiores dolores quos nihil delectus quas, eveniet totam ut quidem perspiciatis temporibus amet, sunt dicta, consectetur hic tempora nisi expedita quisquam consequatur non vero? Alias dolorum iusto soluta impedit amet voluptatum, dolores, molestias aut eligendi assumenda! Expedita, nobis, sequi.</p>
+				</div>
+			</section>
+			<div class="col-md-6">
+				<img class="img-responsive" src="http://lorempixel.com/600/300" alt="image">
 			</div>
 		</div>
+		<!-- begin row prefoot  -->
+		<div class="row prefoot">
+			<div class="col-md-6">
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quos?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae dolores itaque placeat, nostrum mollitia sapiente minima voluptas quibusdam, tempora recusandae suscipit ducimus quia quas dicta expedita amet molestiae quae sed.</p>
+			</div>
+			<div class="col-md-6">
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consectetur.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur mollitia, laborum, harum amet ut sint ex, cupiditate beatae, accusantium dolores obcaecati eligendi sit. Modi quasi porro quibusdam voluptas officia.</p>
+			</div>
+		</div>
+		<!-- end row prefoot -->
+		<!-- begin row prefoot  -->
+		<div class="row prefoot">
+			<div class="col-md-6">
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quos?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae dolores itaque placeat, nostrum mollitia sapiente minima voluptas quibusdam, tempora recusandae suscipit ducimus quia quas dicta expedita amet molestiae quae sed.</p>
+			</div>
+			<div class="col-md-6">
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consectetur.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur mollitia, laborum, harum amet ut sint ex, cupiditate beatae, accusantium dolores obcaecati eligendi sit. Modi quasi porro quibusdam voluptas officia.</p>
+			</div>
+		</div>
+		<!-- end row prefoot -->
+		<div class="row midlle">
+			<section class="wow slideInLeft" data-wow-duration="2s">
+				<div class="col-md-3 wow bounceIn">
+					<img class="img-responsive img-thumbnail text-center" src="http://lorempixel.com/80/80" alt="image">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptates nostrum obcaecati, aliquid, voluptatum pariatur tenetur dolores doloremque iusto numquam.</p>
+				</div>
+			</section>
+			<div class="col-md-3 wow bounceIn">
+				<img class="img-responsive img-thumbnail text-center" src="http://lorempixel.com/80/80" alt="image">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam rerum ipsum illum incidunt iusto perferendis architecto amet ratione a nihil.</p>
+			</div>
+			<div class="col-md-3 wow bounceIn">
+				<img class="img-responsive img-thumbnail text-center" src="http://lorempixel.com/80/80" alt="image">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus doloremque aliquam aperiam, rem neque veritatis quod cum architecto iste labore.</p>
+			</div>
+			<section class="wow slideInRight" data-wow-duration="2s">
+			<div class="col-md-3 wow bounceIn">
+				<img class="img-responsive img-thumbnail text-center" src="http://lorempixel.com/80/80" alt="image">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus iure nostrum, aspernatur quis aut facilis possimus quas molestiae beatae aliquam.</p>
+			</div>
+			</section>
+		</div>
+		<!-- begin row prefoot  -->
+		<div class="row prefoot">
+			<div class="col-md-6">
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quos?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae dolores itaque placeat, nostrum mollitia sapiente minima voluptas quibusdam, tempora recusandae suscipit ducimus quia quas dicta expedita amet molestiae quae sed.</p>
+			</div>
+			<div class="col-md-6">
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consectetur.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur mollitia, laborum, harum amet ut sint ex, cupiditate beatae, accusantium dolores obcaecati eligendi sit. Modi quasi porro quibusdam voluptas officia.</p>
+			</div>
+		</div>
+		<!-- end row prefoot -->
+		<!-- begin row footer  -->
+		<div class="row footer">
+		<section class="wow bounceInUp" data-wow-duration="2s">
+			<div class="col-md-12">
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias mollitia, optio reprehenderit at iure obcaecati blanditiis rem quasi aliquam quaerat recusandae possimus est nisi officia quisquam quam maxime, aspernatur.</p><br>
+				<form class="form-inline">
+					<div class="form-group">
+						<label for="exampleInputName2">Имя:</label><br>
+						<input type="text" class="form-control" id="exampleInputName2" placeholder="Иван Петров">
+					</div><br><br>
+					<div class="form-group">
+						<label for="exampleInputEmail2">Email:</label><br>
+						<input type="email" class="form-control" id="exampleInputEmail2" placeholder="ivan@mail.ru">
+					</div><br><br>
+					<button type="submit" class="btn btn-default">Отправить</button>
+				</form>
+			</div>
+			</section>
+		</div>
+		<!-- end row footer -->
 	</div>
 <script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script> <!-- Скрипт для работы с css анимацией -->
+<!-- код для инициализации скрипта  -->
 <script>
-/* скрипт для работы с анимацией */
-	$(window).scroll(function(){
-		$('.mov').each(function(){ /* ищет элементы с классом */
-			var imagePos = $(this).offset().top;
-			var topOfWindow = $(window).scrollTop();
-			if(imagePos < topOfWindow+800){ /*пикселей до верха*/
-				$(this).addClass('wobble'); /* и добавляет к эти элементам этот класс */
-			}
-		});
-	});
+	new WOW().init();
 </script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
