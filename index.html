@@ -1,0 +1,47 @@
+<!-- //<?php /* Файл с этого сайта = http://objectone.ru/ */ ?> -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Минимальный каркас странички</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<p>Левая колонка</p>
+			</div>
+			<div class="col-md-8">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1 class="animated mov">Пример 1</h1>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1 class="animated mov">Пример 2</h1>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1 class="animated mov">Пример 3</h1>
+<br><br><br>
+			</div>
+			<div class="col-md-2">
+				<p>Правая колонка</p>
+			</div>
+		</div>
+	</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+/* скрипт для работы с анимацией */
+	$(window).scroll(function(){
+		$('.mov').each(function(){ /* ищет элементы с классом */
+			var imagePos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if(imagePos < topOfWindow+800){ /*пикселей до верха*/
+				$(this).addClass('wobble'); /* и добавляет к эти элементам этот класс */
+			}
+		});
+	});
+</script>
+</body>
+</html>
